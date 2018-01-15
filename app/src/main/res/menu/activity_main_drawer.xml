@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_menu_cuaca"
+            android:title="Cuaca" />
+        <item
+            android:id="@+id/nav_fish_market"
+            android:icon="@drawable/ic_menu_market"
+            android:title="Fish Market" />
+        <item
+            android:id="@+id/nav_navigasi"
+            android:icon="@drawable/ic_menu_navigation"
+            android:title="Navigasi" />
+        <item
+            android:id="@+id/nav_pengetahuan"
+            android:icon="@drawable/ic_menu_knowledge"
+            android:title="Pengetahuan" />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_menu_user"
+            android:title="Profil Saya" />
+        <item
+            android:id="@+id/nav_pengaturan"
+            android:icon="@drawable/ic_menu_setting"
+            android:title="Pengaturan" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_power"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_user"-->
+    <!--android:title="Profil Saya" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_setting"-->
+    <!--android:title="Pengaturan" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>
