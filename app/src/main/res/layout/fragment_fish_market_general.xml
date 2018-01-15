@@ -1,49 +1,29 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/searchview">
+
+    </SearchView>
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:paddingLeft="10dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="10dp">
-        <ImageView
-            android:layout_width="43dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_format_align_left"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="filter"
-            android:paddingTop="18dp"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:paddingLeft="5dp"
-            android:textColor="@color/colorPrimary"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_list"
-            android:paddingLeft="100dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="semua"
-            android:layout_gravity="center"
-            android:paddingLeft="5dp"
-            android:paddingTop="18dp"
-            android:textSize="20dp"
-            android:textColor="@color/colorPrimary"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"/>
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchview">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,11 +38,11 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/belut" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Belut \n Rp. 20.000 per kilo"
                     android:textSize="20dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"/>
@@ -78,14 +58,14 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/cakalang" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Ikan Cakalang \n Rp. 40.000 per kilo"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -99,14 +79,14 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/kerang" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Kerang \n Rp. 40.000 per kilo"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -120,14 +100,14 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/tenggiri" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Ikan Tenggiri \n Rp. 80.000 per kilo"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -141,14 +121,14 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/kerapu" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Ikan Kerapu \n Rp. 98.000 per kilo"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -162,14 +142,14 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/tuna" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Ikan Tuna \n Rp. 110.000 per kilo"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -183,14 +163,14 @@
                 <ImageView
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/library" />
+                    android:src="@drawable/wader" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:text="Ikan Mas \n Rp. 15.000 per kilo"
+                    android:text="Ikan Wader \n Rp. 30.000 per kilo"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -199,4 +179,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

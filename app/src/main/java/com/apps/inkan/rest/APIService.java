@@ -34,7 +34,7 @@ import retrofit2.http.Part;
 
 public class APIService {
 
-    public static String BASE_URL = "http://192.168.43.10/INKAN/backend/web/api/";
+    public static String BASE_URL = "http://192.168.1.105/INKAN/backend/web/api/";
     public static PostService service_post = new Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create()).build().create(APIService.PostService.class);
