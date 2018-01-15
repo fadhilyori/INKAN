@@ -6,8 +6,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_beranda"
-            android:icon="@drawable/ic_menu_home"
-            android:title="Beranda" />
+            android:icon="@drawable/ic_menu_cuaca"
+            android:title="Cuaca" />
         <item
             android:id="@+id/nav_fish_market"
             android:icon="@drawable/ic_menu_market"
@@ -35,16 +35,16 @@
     </group>
 
     <!--<item android:title="Communicate">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/nav_share"-->
-                <!--android:icon="@drawable/ic_menu_user"-->
-                <!--android:title="Profil Saya" />-->
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_setting"-->
-                <!--android:title="Pengaturan" />-->
-        <!--</menu>-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_user"-->
+    <!--android:title="Profil Saya" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_setting"-->
+    <!--android:title="Pengaturan" />-->
+    <!--</menu>-->
     <!--</item>-->
 
 </menu>

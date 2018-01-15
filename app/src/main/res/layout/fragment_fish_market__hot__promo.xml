@@ -17,157 +17,282 @@
             <ImageView
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/align"/>
+                android:src="@drawable/ic_format_align_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Filter"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="18dp"
+                android:paddingLeft="5dp"/>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/list"
-                android:paddingLeft="150dp"/>
+                android:src="@drawable/ic_list"
+                android:paddingLeft="100dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="semua"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="18dp"
+                android:paddingLeft="5dp"/>
         </LinearLayout>
 
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/scroll1">
+            android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginLeft="20dp">
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
                     <LinearLayout
+                        android:id="@+id/hotPromo"
                         android:layout_width="150dp"
-                        android:layout_height="100dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/gurami"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Gurami \n Rp50.000,- per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cumi"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cumi-cumi \n Rp28.000,- per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginLeft="20dp">
-
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/mas"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 30.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/udang"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Udang \n Rp35.000,- per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginLeft="20dp">
-
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/library"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 10.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/library"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 10.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginLeft="20dp">
-
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/library"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 10.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/library"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 10.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginLeft="20dp">
-
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/library"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 10.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/perak">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/library"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ikan Mas \n Rp. 10.000 per kilo"/>
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/bgprofil"/>
+                            android:src="@drawable/ic_location"/>
                     </LinearLayout>
                 </LinearLayout>
+
 
             </LinearLayout>
-
         </ScrollView>
-
     </LinearLayout>
-
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="290dp"
+        android:src="@drawable/ic_add" />
 </RelativeLayout>

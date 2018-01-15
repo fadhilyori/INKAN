@@ -1,37 +1,44 @@
 package com.apps.inkan.Model;
 
-import com.google.gson.annotations.SerializedName;
 
+import com.google.gson.annotations.SerializedName;
 /**
- * Created by user on 22/12/2017.
+ * Created by user on 28/12/2017.
  */
 
 public class User {
-    @SerializedName("username")
-    private String username;
-    @SerializedName("password")
-    private String password;
+    private int id, phone_number, provinsi_id, sale_id;
+    private String username, email, address, pictures;
 
-    public User () {}
-
-    public User (String username, String password) {
-        this.username = username;
-        this.password = password;
+    public int getId() {
+        return id;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public int getPhone_number() {
+        return phone_number;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public int getProvinsi_id() {
+        return provinsi_id;
+    }
+
+    public int getSale_id() {
+        return sale_id;
     }
 
     public String getUsername() {
         return username;
     }
 
-    public String getPassword() {
-        return password;
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPictures() {
+        return pictures;
     }
 }

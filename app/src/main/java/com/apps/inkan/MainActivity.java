@@ -17,9 +17,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.TextView;
+
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private TextView switchStatus;
+    private Switch mySwitch;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +35,13 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        switchStatus = (TextView) findViewById(R.id.switchStatus);
+        mySwitch = (Switch) findViewById(R.id.mySwitch);
+        // set the switch to ON
+//        mySwitch.setChecked(true);
+        // attach a listener to check for changes in state
+
+
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +114,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_fish_market) {
             fragment = new FishMarketFragment();
         } else if (id == R.id.nav_navigasi) {
+            fragment = new NavigasiFragment();
             // go to Google Maps Applicatio
         } else if (id == R.id.nav_pengaturan) {
             fragment = new PengaturanFragment();
