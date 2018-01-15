@@ -43,7 +43,7 @@ public class FishMarketFragment extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getChildFragmentManager());
-        adapter.addFragment(new FishMarket_General(), "Explore");
+        adapter.addFragment(new FishMarket_General(), "Fish Market");
         adapter.addFragment(new FishMarket_Hot_Promo(), "Hot Promo");
         viewPager.setAdapter(adapter);
     }

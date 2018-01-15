@@ -12,10 +12,26 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_logout">Keluar</string>
     <string name="username_account">Fadhil Yori</string>
     <string name="useremail_account">fadhilyori12@outlook.com</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="provinsi">
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+    </string-array>
+    <string-array name="kota">
+        <item>Jakarta</item>
+        <item>Surabaya</item>
+        <item>Semarang</item>
+    </string-array>
+    <string-array name="kecamatan">
+        <item>Rungkut</item>
+        <item>Wonokromo</item>
+        <item>Sukolilo</item>
+    </string-array>
 </resources>

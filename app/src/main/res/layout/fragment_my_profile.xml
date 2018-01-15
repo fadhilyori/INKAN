@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <FrameLayout
-        android:id="@+id/fr_image"
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
@@ -11,6 +11,12 @@
             android:layout_height="wrap_content"
             android:src="@drawable/bgprofil"
             android:adjustViewBounds="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_camera"
+            android:layout_marginLeft="300dp"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -18,54 +24,130 @@
             android:padding="8dp"
             android:layout_gravity="bottom|left"
             android:layout_marginBottom="10dp">
+
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/man"/>
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/man" />
         </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEdit"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/ic_edit"
+            android:background="#bf000000"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="120dp"/>
+
     </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:orientation="vertical"
         android:padding="10dp"
-        android:layout_below="@id/fr_image">
-        <TextView
+        android:layout_marginLeft="20dp">
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hilton Hotel Isla Nublar Resort"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:textStyle="bold"/>
-        <TextView
+            android:layout_height="match_parent">
+
+        </ScrollView>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jurassic World Avenue, West island, 87 miles of Costa Rica"
-            android:textSize="15sp"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:textStyle="normal"/>
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/avatar"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp" />
-        <TextView
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="flawsome"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sidiq Permana (owner)"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_email" />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="flawsome@gmail.com"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_phone" />
+            <TextView
+                android:id="@+id/tvTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="0987654321"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_home" />
+            <TextView
+                android:id="@+id/tvAlamat"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="Raya ITS, Mulyorejo, Sukolilo, Surabaya, Jawa Timur"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btnJual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jual Ikan"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
     </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="update"
-        android:background="@android:color/holo_red_light"
-        android:textColor="@android:color/white"
-        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
